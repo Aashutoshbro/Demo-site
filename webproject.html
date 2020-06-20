@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Styling the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: lightblue;
+}
+
+/* Styling the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:28px;
+
+}
+
+/* Changes color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* unreal image */
+.fakeimg {
+  background-color: lightblue;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Adding a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: lightblue;
+  margin-top: 20px;
+}
+
+/* Making a Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Making a Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Tech With Aashubro</h1>
+  <p>This is a demo website which you can resize</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  <a href="#" style="float:right">Link 4</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, June 20, 2020</h5>
+      <div class="fakeimg" style="height:200px;">PIC 1</div>
+      <p>Some Intro..</p>
+      <p>Hello, My name is aashutosh sapkota.welcome to my channel for more videos please hit the subscribe button and let other know about this channel.Getting started with a web designing is so amazing.So share the video to your friends and request them to hit the SUBSCRIBE button</p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, June 20,2020</h5>
+      <div class="fakeimg" style="height:200px;">PIC 2</div>
+      <p>Some text..</p>
+      <p>Hello, My name is aashutosh sapkota.welcome to my channel for more videos please hit the subscribe button and let other know about this channel.Getting started with a web designing is so amazing.So share the video to your friends and request them to hit the SUBSCRIBE button</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">PIC 3</div>
+      <p>Myself , Aashutosh Sapkota.Please share this video so that other can reach to this platform</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post from FB</h3>
+      <div class="fakeimg"><p>Image 1</p></div>
+      <div class="fakeimg"><p>Image 2</p></div>
+      <div class="fakeimg"><p>Image 3</p></div>
+    </div>
+    <div class="card">
+      <h3>You Can Follow Me</h3>
+      <p>I have created the facebook page and about the query you can just ask me in there or you can post in there</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Contact me</h2>
+  
+  <b>- By aashubro</b>
+</div>
+
+</body>
+</html>
